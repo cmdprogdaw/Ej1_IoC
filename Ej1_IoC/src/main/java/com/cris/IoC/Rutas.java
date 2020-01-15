@@ -5,22 +5,24 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.cris.IoC.servicio.ComponenteGigas;
+import com.cris.IoC.beans.almacenamiento.Almacenamiento;
 
 @Controller
 public class Rutas {
 
 	@Autowired
-	ComponenteGigas componenteGigas;
+	Almacenamiento alumnado;
+	
+	@Autowired
+	Almacenamiento profesorado;
+	
 	
 	
 	@GetMapping("/")
 	@ResponseBody
 	public String rutaInicial() {
 		
-		
-		
-		return "";
+		return alumnado + "<br>" + profesorado;
 	}
 	
 }
