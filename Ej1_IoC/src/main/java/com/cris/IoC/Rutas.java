@@ -23,23 +23,4 @@ public class Rutas {
 		return "";
 	}
 	
-	
-	@GetMapping("/ficheros/profesorado")
-	@ResponseBody
-	public String profesores() {
-		
-		
-		
-		return "";
-	}
-	
-	
-	@GetMapping("/ficheros/alumnado")
-	@ResponseBody
-	public String alumnos() {
-		
-		
-		
-		return "";
-	}
 }
