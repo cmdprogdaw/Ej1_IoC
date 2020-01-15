@@ -13,7 +13,7 @@ public class AlmacenamientosBuilder {
 		
 		Almacenamiento almacenamiento = new Almacenamiento();
 		almacenamiento.setPath("/ficheros/alumnado");
-		almacenamiento.setTamanio(1);
+		almacenamiento.setTamanio(0.1f);
 		
 		return almacenamiento;
 	}

@@ -22,6 +22,12 @@ public class Almacenamiento {
 	public void setTamanio(float tamanio) {
 		this.tamanio = tamanio;
 	}
+
+	
+	@Override
+	public String toString() {
+		return "Almacenamiento [path=" + path + ", tamanio=" + tamanio + "]";
+	}
 	
 	
 }
